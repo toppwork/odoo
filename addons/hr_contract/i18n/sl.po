@@ -6,6 +6,7 @@
 # matjaz k <matjaz@mentis.si>, 2018
 # Martin Trigaux, 2018
 # Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# Tadej Lupšina <tadej@hbs.si>, 2019
 # Jasmina Macur <jasmina@hbs.si>, 2019
 # 
 msgid ""
@@ -50,7 +51,7 @@ msgstr "Preklicano"
 #. module: hr_contract
 #: model:ir.actions.act_window,help:hr_contract.action_hr_contract
 msgid "Click here to create new contracts."
-msgstr ""
+msgstr "Kliknite tukaj, da ustvarite nove pogodbe."
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_company_id
@@ -151,7 +152,7 @@ msgstr "Trenutna pogodba"
 #. module: hr_contract
 #: model:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Current Employee"
-msgstr ""
+msgstr "Trenutni zaposleni"
 
 #. module: hr_contract
 #: model:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban

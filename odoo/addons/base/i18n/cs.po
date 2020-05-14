@@ -7,9 +7,9 @@
 # Jaroslav Helemik Nemec <nemec@helemik.cz>, 2018
 # xlu <xlu@seznam.cz>, 2018
 # Ladislav Tomm <tomm@helemik.cz>, 2018
-# Martin Trigaux, 2018
 # Michal Veselý <michal@veselyberanek.net>, 2019
-# trendspotter <j.podhorecky@volny.cz>, 2019
+# Martin Trigaux, 2019
+# trendspotter <j.podhorecky@volny.cz>, 2020
 # 
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-03 15:05+0000\n"
 "PO-Revision-Date: 2017-09-20 10:13+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2019\n"
+"Last-Translator: trendspotter <j.podhorecky@volny.cz>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -548,6 +548,14 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_uk_reports_hmrc
+msgid ""
+"\n"
+"        Accounting reports send to HMRC\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_account_extension
 msgid ""
 "\n"
@@ -560,6 +568,20 @@ msgstr ""
 " Přizpůsobuje základní účetní modul pro Enterprise Edition. \n"
 "\n"
 "Tento modul bude automaticky nainstalován, pokud je k dispozici účetní modul a Enterprise edice "
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_mx_reports_closing
+msgid ""
+"\n"
+"        Allow to generate the trial balance for the closing entry.\n"
+"\n"
+"        Colloquially known as \"Month 13\"\n"
+"    "
+msgstr ""
+"\n"
+"Umožňuje vygenerovat zkušební zůstatek pro závěrečný záznam.\n"
+"\n"
+"Hovorově známý jako „Měsíc 13“"
 
 #. module: base
 #: model:ir.module.module,description:base.module_voip
@@ -1372,6 +1394,16 @@ msgstr ""
 "\n"
 "Umožňuje společnosti přizpůsobit, která instalace Pad by měla být použita k propojení s novými\n"
 "podložky (ve výchozím nastavení http://etherpad.com/)."
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_intrastat_2019
+msgid ""
+"\n"
+"Adds the possibility to specify the origin country of goods and the partner VAT in the Intrastat XML report.\n"
+"    "
+msgstr ""
+"\n"
+"Přidá možnost specifikovat zemi původu zboží a partnerskou DPH v Intrastat XML přehledu."
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_calendar
@@ -5891,6 +5923,8 @@ msgid ""
 "\n"
 "This widget allows to display gauges using d3 library.\n"
 msgstr ""
+"\n"
+"Tento widget umožňuje zobrazit měřidla pomocí knihovny d3.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_product_expiry
@@ -5908,6 +5942,18 @@ msgid ""
 "\n"
 "Also implements the removal strategy First Expiry First Out (FEFO) widely used, for example, in food industries.\n"
 msgstr ""
+"\n"
+"Sledujte různá data produktů a výrobních šarží.\n"
+"======================================================\n"
+"\n"
+"Lze sledovat následující data:\n"
+"-------------------------------\n"
+"- konec trvanlivosti\n"
+"- datum minimální trvanlivosti\n"
+"- datum vyřazení\n"
+"- datum výstrahy\n"
+"\n"
+"Také implementuje strategii odstraňování First Expiry First Out (FEFO) široce používanou například v potravinářském průmyslu.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_transifex
@@ -6223,6 +6269,11 @@ msgid ""
 "Works with Worldline keys version 2.0, contains implementation of\n"
 "payments acquirer using Worldline SIPS."
 msgstr ""
+"\n"
+"Worldline SIPS Payment Acquirer pro online platby\n"
+"\n"
+"Pracuje s klíči Worldline verze 2.0, obsahuje implementaci\n"
+"příjemce plateb pomocí Worldline SIPS."
 
 #. module: base
 #: code:addons/base/ir/ir_ui_view.py:1054
@@ -6240,6 +6291,14 @@ msgstr ""
 "Modul pro synchronizaci dokumentů mezi několika společnostmi. To vám například umožní, aby byla automaticky vytvořena zakázka odběratele při ověření objednávky u jiné společnosti systému jako dodavatele a naopak.\n"
 "\n"
 "Podporované dokumenty jsou SO, PO a faktury / dobropisy.\n"
+
+#. module: base
+#: code:addons/model.py:148
+#, python-format
+msgid ""
+" another model requires the record being deleted. If possible, archive it "
+"instead."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
@@ -6379,6 +6438,14 @@ msgstr ", pouze ke čtení"
 #: model:ir.ui.view,arch_db:base.report_irmodulereference
 msgid ", required"
 msgstr ", vyžadovaný"
+
+#. module: base
+#: code:addons/model.py:136
+#, python-format
+msgid ""
+"- Create/update: a mandatory field is not set.\n"
+"- Delete: another model requires the record being deleted. If possible, archive it instead."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -7151,6 +7218,11 @@ msgid "A module to test the API."
 msgstr "Modul pro testování API."
 
 #. module: base
+#: model:ir.module.module,description:base.module_test_rpc
+msgid "A module to test the RPC requests."
+msgstr "Modul pro testování požadavků RPC."
+
+#. module: base
 #: model:ir.module.module,description:base.module_test_uninstall
 msgid "A module to test the uninstall feature."
 msgstr "Modul pro testování funkce odinstalování."
@@ -7549,6 +7621,11 @@ msgstr "Aktivní"
 #: model:ir.module.module,summary:base.module_website_sale_delivery
 msgid "Add Delivery Costs to Online Sales"
 msgstr "Přidat náklady na doručení k online prodejům"
+
+#. module: base
+#: selection:ir.actions.server,state:0
+msgid "Add Followers"
+msgstr "Přidat následovníky"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_cash_basis_base_account
@@ -8247,6 +8324,11 @@ msgid "Automate Marketing Campaigns"
 msgstr "Automatizovat marketingové kampaně"
 
 #. module: base
+#: selection:ir.actions.server,usage:0
+msgid "Automated Action"
+msgstr "Automatizovaná akce"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_base_automation
 msgid "Automated Action Rules"
 msgstr "Pravidla Automatizované akce"
@@ -8577,6 +8659,11 @@ msgstr "Bělorusko"
 #: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat
 msgid "Belgian Intrastat Declaration"
 msgstr "Belgická deklarace pro Intrastat"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat_2019
+msgid "Belgian Intrastat Declaration - Complement for 2019"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_blackbox_be
@@ -9662,6 +9749,12 @@ msgid "Constraint Type"
 msgstr "Typ omezení"
 
 #. module: base
+#: code:addons/model.py:153
+#, python-format
+msgid "Constraint:"
+msgstr "Omezení:"
+
+#. module: base
 #: sql_constraint:ir.model.constraint:0
 msgid "Constraints with the same name are unique per module."
 msgstr "Omezení se stejným názvem jsou jedinečné pro každý modul."
@@ -10615,6 +10708,11 @@ msgid "Dependency"
 msgstr "Závislost"
 
 #. module: base
+#: model:ir.module.module,description:base.module_test_pylint
+msgid "Deprecated empty module in favor of test-lint."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment_description
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_name
 #: model:ir.model.fields,field_description:base.field_ir_module_category_description
@@ -10920,6 +11018,12 @@ msgid "Document model"
 msgstr "Model dokumentu"
 
 #. module: base
+#: code:addons/models.py:2888
+#, python-format
+msgid "Document type:"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_forum_doc
 msgid "Documentation"
 msgstr "Dokumentace"
@@ -10991,6 +11095,174 @@ msgstr "Trvání nemůže být negativní"
 #: model:res.partner.industry,full_name:base.res_partner_industry_E
 msgid "E WATER SUPPLY;SEWERAGE,WASTE MANAGEMENT AND REMEDIATION ACTIVITIES"
 msgstr "E DODÁVKA VODY, ODDĚLENÍ ODPADŮ, ŘÍZENÍ ODPADŮ A ČINNOSTI ODSTRANĚNÍ "
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mx_edi_cancellation
+msgid ""
+"EDI Cancellation\n"
+"================\n"
+"\n"
+"This module adds the next features in the cancel process:\n"
+"\n"
+"1. Button to request cancellation in the SAT was added.\n"
+"2. The cancel process in Odoo, only could be executed when the SAT status\n"
+"   is cancelled.\n"
+"3. The cancel button in the invoice is dummy if the invoice is not\n"
+"   cancelled in the SAT.\n"
+"\n"
+"Which is the new flow to cancel?\n"
+"--------------------------------\n"
+"\n"
+"A new button `(Request Cancelation)` was added on the invoice view, that\n"
+"appear when the invoice is open and the `PAC status` is `Signed`\n"
+"\n"
+"When this new button is press, send the CFDI to the PAC to try cancel it\n"
+"in the SAT system. And do not allows to cancel the invoice in Odoo until\n"
+"it was properly canceled in the SAT. (This is an automatic action that\n"
+"execute the system).\n"
+"\n"
+"If any invoice is cancelled in the SAT, and the user can not wait for the\n"
+"cron, could press the `Cancel` button, and this must be cancelled.\n"
+"\n"
+"Which are the cases supported in this module?\n"
+"---------------------------------------------\n"
+"\n"
+"**Case 1**\n"
+"\n"
+"+----------+---------+\n"
+"| System   | State   |\n"
+"+==========+=========+\n"
+"| Odoo     | Open    |\n"
+"+----------+---------+\n"
+"| PAC      | Signed  |\n"
+"+----------+---------+\n"
+"| SAT      | Valid   |\n"
+"+----------+---------+\n"
+"\n"
+"This case is when the invoice is properly signed in the SAT system. To\n"
+"cancel is necessary to press the button `Request Cancelation`, that will\n"
+"to verify that effectively the CFDI is not previously canceled in the SAT\n"
+"system and will to send it to cancel in the SAT.\n"
+"\n"
+"After of request the cancelation, could be found the next cases:\n"
+"\n"
+"*The cancel process was succesful*\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Open       |\n"
+"+----------+------------+\n"
+"| PAC      | Cancelled  |\n"
+"+----------+------------+\n"
+"| SAT      | Valid      |\n"
+"+----------+------------+\n"
+"\n"
+"In this case, the system will execute the next actions:\n"
+"\n"
+"1. An action will to update the PAC status (To Canceled).\n"
+"\n"
+"2. A method will be called and will try to cancel the invoice in Odoo.\n"
+"\n"
+"\n"
+"*The cancel process cannot be completed*\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Open       |\n"
+"+----------+------------+\n"
+"| PAC      | To Cancel  |\n"
+"+----------+------------+\n"
+"| SAT      | Valid      |\n"
+"+----------+------------+\n"
+"\n"
+"In this case, the system wait for the PAC system, and will execute the next\n"
+"action:\n"
+"\n"
+"1. A method will be called to verify if the CFDI was properly cancelled in\n"
+"the SAT system, and when the SAT status is `Cancelled` will try to cancel the\n"
+"invoice in Odoo.\n"
+"\n"
+"**Case 2**\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Open       |\n"
+"+----------+------------+\n"
+"| PAC      | To Cancel  |\n"
+"+----------+------------+\n"
+"| SAT      | Valid      |\n"
+"+----------+------------+\n"
+"\n"
+"This case is the same that in the previous case when the cancel process\n"
+"cannot be completed.\n"
+"\n"
+"If the customer does not accept the CFDI cancelation, the cancel process\n"
+"must be aborted and the invoice must be returned to signed. For this, was\n"
+"added an action in the invoice `Revert CFDI cancellation`, that could be\n"
+"called in the `Actions` of it.\n"
+"\n"
+"\n"
+"**Case 3**\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Open       |\n"
+"+----------+------------+\n"
+"| PAC      | To Cancel  |\n"
+"+----------+------------+\n"
+"| SAT      | Cancelled  |\n"
+"+----------+------------+\n"
+"\n"
+"The system executes a scheduled action that will cancel the invoice in Odoo,\n"
+"and in that process, the PAC status must be updated to `Cancelled`.\n"
+"\n"
+"\n"
+"**Case 4**\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Cancel     |\n"
+"+----------+------------+\n"
+"| PAC      | Signed     |\n"
+"+----------+------------+\n"
+"| SAT      | Valid      |\n"
+"+----------+------------+\n"
+"\n"
+"The system executes a scheduled action that will check that the SAT status\n"
+"continues `Valid` and if yes, the invoice must be returned to `Open`\n"
+"(Without generate a new CFDI). For this:\n"
+"\n"
+"1. If the invoice does not has a journal entry, a new will be generated and\n"
+"the invoice state must be changed to `Open`.\n"
+"\n"
+"2. If the journal entry in the invoice has a revert, it will be cancelled\n"
+"and the invoice state must be changed to `Open`.\n"
+"\n"
+"**Case 5**\n"
+"\n"
+"+----------+------------+\n"
+"| System   | State      |\n"
+"+==========+============+\n"
+"| Odoo     | Cancel     |\n"
+"+----------+------------+\n"
+"| PAC      | To Cancel  |\n"
+"+----------+------------+\n"
+"| SAT      | Valid      |\n"
+"+----------+------------+\n"
+"\n"
+"This is the same case that in the previous one, but extra after that the\n"
+"invoice is open again, the PAC status must be updated to 'Signed.'\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_cancellation
+msgid "EDI Cancellation for Mexican Localization"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_external_trade
@@ -11742,6 +12014,15 @@ msgid "F CONSTRUCTION"
 msgstr "F KONSTRUKCE"
 
 #. module: base
+#: code:addons/base/ir/ir_mail_server.py:128
+#, python-format
+msgid ""
+"Failed to encode the address %s\n"
+"from mail header:\n"
+"%s"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.fk
 msgid "Falkland Islands"
 msgstr "Falklandy"
@@ -11895,6 +12176,12 @@ msgid "Field names must be unique per model."
 msgstr "Názvy polí musí být jedinečné pro každý model."
 
 #. module: base
+#: code:addons/model.py:143
+#, python-format
+msgid "Field:"
+msgstr "Pole:"
+
+#. module: base
 #: model:ir.actions.act_window,name:base.action_model_fields
 #: model:ir.model,name:base.model_ir_model_fields
 #: model:ir.model.fields,field_description:base.field_ir_model_field_id
@@ -11912,7 +12199,13 @@ msgid "Fields Description"
 msgstr "Popis polí"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:582
+#: code:addons/models.py:2564
+#, python-format
+msgid "Fields:"
+msgstr ""
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:595
 #, python-format
 msgid "Fields: %s"
 msgstr "Pole: %s"
@@ -12030,6 +12323,29 @@ msgstr "Finsko"
 #: model:ir.module.module,shortdesc:base.module_mail_push
 msgid "Firebase Cloud Messaging"
 msgstr "Firebase Cloud Messaging"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mx_reports_closing
+msgid ""
+"Fiscal Reports for Closing Entry\n"
+"================================\n"
+"\n"
+"Trial Balance report is complemented to allow generate the closing entry\n"
+"(A.K.A Month 13th move)\n"
+"\n"
+"Configuration\n"
+"=============\n"
+"\n"
+"Steps to get the report:\n"
+"\n"
+"1. The journal entry for transfer of exercises must be generated manually\n"
+"   with the end date of the fiscal year that is closing. And must be posted.\n"
+"\n"
+"2. This entry must be marked as closing entry for the fiscal year.\n"
+"\n"
+"3. The trial balance Month 13 report must be generated with dates for all the\n"
+"   fiscal year to report.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_fleet
@@ -13447,6 +13763,11 @@ msgid "Import exchange rates from the Internet.\n"
 msgstr "Importovat směnné kurzy z Internetu\n"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_account_reports_cash_flow
+msgid "Improved Cash Flow Statement"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_modules
 #: model:ir.model.fields,field_description:base.field_ir_model_modules
 msgid "In Apps"
@@ -14427,7 +14748,7 @@ msgstr "Úvodní panel"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_address_format
 msgid "Layout in Reports"
-msgstr ""
+msgstr "Rozvrh v Reportech"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_lead_automation
@@ -15385,6 +15706,12 @@ msgstr "Model nebyl nalezen: %(model)s"
 #: model:ir.model.fields,help:base.field_ir_cron_model_id
 msgid "Model on which the server action runs."
 msgstr "Model, na kterém je spuštěna akce serveru."
+
+#. module: base
+#: code:addons/model.py:142 code:addons/model.py:152
+#, python-format
+msgid "Model:"
+msgstr "Model:"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_model_model
@@ -16586,9 +16913,20 @@ msgid "Odoo Mexican Localization Reports"
 msgstr "Odoo Mexické lokalizační reporty"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_reports_closing
+msgid "Odoo Mexican Localization Reports for Closing"
+msgstr "Mexická lokalizace Zpráv pro uzávěrky"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_customs
 msgid "Odoo Mexico Localization for Invoice with customs Number"
 msgstr "Odoo Mexiko Lokalizace pro fakturu s vlastním číslem"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_sale_coupon
+#: model:ir.module.module,summary:base.module_l10n_mx_edi_sale_coupon
+msgid "Odoo Mexico Localization for Sale Coupon"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_landing
@@ -17288,7 +17626,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event
 msgid "Online Events"
-msgstr ""
+msgstr "Online události"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr_recruitment
@@ -17439,6 +17777,12 @@ msgstr "Otevřít okno"
 #: model:ir.ui.view,arch_db:base.view_window_action_search
 msgid "Open a Window"
 msgstr "Otevřete okno"
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:1215 code:addons/models.py:2888
+#, python-format
+msgid "Operation:"
+msgstr "Úkon:"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_crm
@@ -18054,6 +18398,11 @@ msgstr "Příjemce plateb: Implementace PayuMoney"
 #: model:ir.module.module,summary:base.module_payment_stripe
 msgid "Payment Acquirer: Stripe Implementation"
 msgstr "Příjemce platby: Čtení proužku"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_payment_stripe_sca
+msgid "Payment Acquirer: Stripe Implementation for the EU PSD2"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_transfer
@@ -18866,6 +19215,14 @@ msgid "Record rules"
 msgstr "Pravidla záznamů"
 
 #. module: base
+#: code:addons/base/ir/ir_actions.py:245 code:addons/models.py:2789
+#: code:addons/models.py:2875 code:addons/models.py:2889
+#: code:addons/models.py:3235 code:addons/models.py:4020
+#, python-format
+msgid "Records:"
+msgstr "Záznamy:"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_hr_recruitment
 msgid "Recruitment"
 msgstr "Nábor"
@@ -19347,7 +19704,7 @@ msgstr "Prodejní kupón"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_coupon_delivery
 msgid "Sale Coupon Delivery"
-msgstr ""
+msgstr "Doručení prodejního kuponu"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_service_rating
@@ -20287,6 +20644,12 @@ msgid "Stripe Payment Acquirer"
 msgstr "Příjemce platby proužkem"
 
 #. module: base
+#: model:ir.module.module,description:base.module_payment_stripe_sca
+#: model:ir.module.module,shortdesc:base.module_payment_stripe_sca
+msgid "Stripe Payment Acquirer - Strong Customer Authentication Update"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_web_studio
 msgid "Studio"
 msgstr "Studio"
@@ -21177,6 +21540,11 @@ msgid "Test Performance"
 msgstr "Testování výkonu"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_test_rpc
+msgid "Test RPC"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_test_access_rights
 msgid "Testing of access restrictions"
 msgstr "Testování omezení přístupu"
@@ -21431,6 +21799,14 @@ msgid "The list of models that extends the current model."
 msgstr "Seznam modelů, které rozšiřují aktuální model."
 
 #. module: base
+#: code:addons/base/ir/ir_model.py:522
+#, python-format
+msgid ""
+"The m2o field %s is required but declares its ondelete policy as being 'set "
+"null'. Only 'restrict' and 'cascade' make sense."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_filters_action_id
 msgid ""
 "The menu action this filter applies to. When left empty the filter applies "
@@ -21504,15 +21880,8 @@ msgstr "Jediné předdefinované proměnné jsou"
 #. module: base
 #: code:addons/model.py:121
 #, python-format
-msgid ""
-"The operation cannot be completed, probably due to the following:\n"
-"- deletion: you may be trying to delete a record while other records still reference it\n"
-"- creation/update: a mandatory field is not correctly set"
-msgstr ""
-"Operaci nelze dokončit, pravděpodobně z následujících důvodů: - vymazání: "
-"pravděpodobně se pokoušíte odstranit záznam, zatímco ostatní záznamy stále "
-"odkazují na něj - vytvoření / aktualizace: povinné pole není správně "
-"nastaveno"
+msgid "The operation cannot be completed:"
+msgstr "Operaci nelze dokončit:"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_domain
@@ -21610,6 +21979,14 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 msgid "The selected modules have been updated / installed !"
 msgstr "Vybrané moduly byly aktualizovány / instalovány !"
+
+#. module: base
+#: code:addons/base/module/module.py:546
+#, python-format
+msgid ""
+"The server is busy right now, module operations are not possible at this "
+"time, please try again later."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_code
@@ -22204,6 +22581,11 @@ msgid "UK - Accounting Reports"
 msgstr "UK - Účetní záznamy"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_uk_reports_hmrc
+msgid "UK - Accounting Reports to HMRC"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_delivery_ups
 msgid "UPS Bill My Account"
 msgstr ""
@@ -22351,7 +22733,13 @@ msgid "Unknown"
 msgstr "Neznámý"
 
 #. module: base
-#: code:addons/models.py:994
+#: code:addons/models.py:833
+#, python-format
+msgid "Unknown database error: '%s'"
+msgstr ""
+
+#. module: base
+#: code:addons/models.py:996
 #, python-format
 msgid "Unknown database identifier '%s'"
 msgstr "Neznámý identifikátor databáze '%s'"
@@ -22619,6 +23007,15 @@ msgid "User-defined Filters"
 msgstr "Uživatelské filtry"
 
 #. module: base
+#: code:addons/base/ir/ir_actions.py:245 code:addons/base/ir/ir_model.py:1215
+#: code:addons/models.py:2564 code:addons/models.py:2789
+#: code:addons/models.py:2875 code:addons/models.py:2889
+#: code:addons/models.py:3235 code:addons/models.py:4020
+#, python-format
+msgid "User:"
+msgstr "Uživatel:"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_user
 msgid "Username"
 msgstr "Uživatelské jméno"
@@ -22744,7 +23141,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_property_value_float
 msgid "Value Float"
-msgstr ""
+msgstr "plovoucí hodnota"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_property_value_integer
@@ -23109,7 +23506,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk
 msgid "Website Helpdesk"
-msgstr ""
+msgstr "webové centrum nápovědy"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
@@ -24201,6 +24598,16 @@ msgstr "test-inherits"
 #: model:ir.module.module,shortdesc:base.module_test_limits
 msgid "test-limits"
 msgstr "test-limits"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_test_lint
+msgid "test-lint"
+msgstr "test-lint"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_test_translation_import
+msgid "test-translation-import"
+msgstr "test-translation-import"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_uninstall

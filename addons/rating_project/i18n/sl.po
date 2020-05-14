@@ -206,17 +206,17 @@ msgstr "Zadnjih 30 dni"
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
 msgid "Latest Rating: Higly Dissatisfied"
-msgstr ""
+msgstr "Zadnja ocena: Zelo nezadovoljen"
 
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
 msgid "Latest Rating: Not Satisfied"
-msgstr ""
+msgstr "Zadnja ocena: Nezadovoljen"
 
 #. module: rating_project
 #: model:ir.ui.view,arch_db:rating_project.project_task_view_kanban_inherit_rating
 msgid "Latest Rating: Satisfied"
-msgstr ""
+msgstr "Zadnja ocena: Zadovoljen"
 
 #. module: rating_project
 #: selection:project.project,rating_status:0
@@ -324,7 +324,7 @@ msgstr "Opravilo"
 #: model:mail.message.subtype,name:rating_project.mt_project_task_rating
 #: model:mail.message.subtype,name:rating_project.mt_task_rating
 msgid "Task Rating"
-msgstr ""
+msgstr "Ocena opravila"
 
 #. module: rating_project
 #: model:ir.model,name:rating_project.model_project_task_type
